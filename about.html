@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Alex Morgan</title>
+  <meta name="description" content="Learn more about Alex Morgan — developer, designer, and life-long learner." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ====== Navigation ====== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Alex<span>.</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="btn btn-primary" style="padding:.5rem 1.25rem;">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- ====== Page Hero ====== -->
+    <div class="page-hero">
+      <div class="container">
+        <span class="badge">About Me</span>
+        <h1 style="font-family:var(--font-heading);font-size:clamp(2rem,4vw,3.2rem);color:var(--clr-primary);margin-top:.5rem;line-height:1.2;">A little about<br><em>who I am</em></h1>
+      </div>
+    </div>
+
+    <!-- ====== About Grid ====== -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Photo column -->
+          <div class="about-photo reveal">
+            <div class="avatar-placeholder" style="width:100%;height:100%;">
+              <svg xmlns="http://www.w3.org/2000/svg" style="width:100px;height:100px;opacity:.4;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+              <span style="color:var(--clr-accent);font-weight:600;">Your Photo Here</span>
+            </div>
+          </div>
+
+          <!-- Text column -->
+          <div>
+            <span class="badge">My Story</span>
+            <h1 class="about-content" style="font-family:var(--font-heading);font-size:clamp(1.8rem,3vw,2.6rem);color:var(--clr-primary);margin:.5rem 0 1.25rem;line-height:1.2;">Hey, I'm Alex Morgan</h1>
+            <p style="color:var(--clr-text-muted);font-size:1.05rem;margin-bottom:1rem;">
+              I'm a full-stack developer and UI designer based in San Francisco. I've spent the last four years
+              building products that sit at the intersection of elegant design and clean engineering.
+            </p>
+            <p style="color:var(--clr-text-muted);font-size:1.05rem;margin-bottom:1rem;">
+              My journey began with a curiosity for how things work — I'd pull apart websites to understand the
+              code behind them. That curiosity turned into a craft. Today I build scalable web applications,
+              design intuitive user interfaces, and help teams ship with confidence.
+            </p>
+            <p style="color:var(--clr-text-muted);font-size:1.05rem;margin-bottom:1.75rem;">
+              Outside of code you'll find me hiking trails, experimenting with film photography,
+              or hunting for the perfect cup of pour-over coffee. ☕
+            </p>
+
+            <dl class="about-facts reveal">
+              <div class="fact-item">
+                <dt>Location</dt>
+                <dd>San Francisco, CA</dd>
+              </div>
+              <div class="fact-item">
+                <dt>Experience</dt>
+                <dd>4+ Years</dd>
+              </div>
+              <div class="fact-item">
+                <dt>Focus</dt>
+                <dd>Full-Stack Dev</dd>
+              </div>
+              <div class="fact-item">
+                <dt>Availability</dt>
+                <dd>Open to Work 🟢</dd>
+              </div>
+            </dl>
+
+            <a href="contact.html" class="btn btn-primary">Let's Work Together</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Skills ====== -->
+    <section class="section-pad" style="background:var(--clr-bg-alt);">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="badge">Expertise</span>
+          <h2>Skills &amp; Technologies</h2>
+          <p>Tools and technologies I use to bring ideas to life.</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;" class="reveal">
+          <!-- Left column -->
+          <div>
+            <h3 style="font-family:var(--font-heading);color:var(--clr-primary);margin-bottom:1.25rem;font-size:1.2rem;">Frontend</h3>
+            <div class="skill-bar-list">
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>HTML / CSS</span><span>95%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>JavaScript</span><span>88%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>React</span><span>82%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Vue.js</span><span>75%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75%"></div></div>
+              </div>
+            </div>
+          </div>
+          <!-- Right column -->
+          <div>
+            <h3 style="font-family:var(--font-heading);color:var(--clr-primary);margin-bottom:1.25rem;font-size:1.2rem;">Backend &amp; Tools</h3>
+            <div class="skill-bar-list">
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Node.js / Express</span><span>85%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>SQL / PostgreSQL</span><span>78%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Git &amp; CI/CD</span><span>80%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Figma / UI Design</span><span>70%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Experience Timeline ====== -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="badge">History</span>
+          <h2>Experience &amp; Education</h2>
+          <p>Where I've worked and learned over the years.</p>
+        </div>
+        <div style="max-width:640px;margin-inline:auto;" class="reveal">
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <p class="timeline-date">2023 – Present</p>
+              <h3>Senior Front-End Developer</h3>
+              <p>Acme Tech Inc. — Leading UI development for a SaaS platform used by 50,000+ users. Spearheaded the design system rebuild that reduced component debt by 40%.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-date">2021 – 2023</p>
+              <h3>Full-Stack Developer</h3>
+              <p>StartupXYZ — Built and shipped three core product features including real-time collaboration and an API integration layer, scaling from 0 to 10k users.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-date">2020 – 2021</p>
+              <h3>Junior Web Developer</h3>
+              <p>Freelance — Delivered over 15 client websites and web applications, from landing pages to custom e-commerce builds.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-date">2016 – 2020</p>
+              <h3>BSc Computer Science</h3>
+              <p>University of California, Berkeley — Graduated with honours. Specialised in human–computer interaction and software engineering.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CTA ====== -->
+    <section class="section-pad" style="background:var(--clr-primary);">
+      <div class="container text-center reveal">
+        <h2 style="font-family:var(--font-heading);font-size:clamp(1.8rem,3vw,2.6rem);color:#fff;margin-bottom:1rem;">Want to know more?</h2>
+        <p style="color:rgba(255,255,255,.65);max-width:480px;margin-inline:auto;margin-bottom:2rem;">Check out my projects or drop me a message — I'd love to connect.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="projects.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff;">View Projects</a>
+          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">Alex<span>.</span></p>
+      <ul class="footer-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Twitter / X">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Alex Morgan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
