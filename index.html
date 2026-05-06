@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Morgan — Developer &amp; Designer</title>
+  <meta name="description" content="Personal website of Alex Morgan — a developer and designer building thoughtful digital experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ====== Navigation ====== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Alex<span>.</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="btn btn-primary" style="padding:.5rem 1.25rem;">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- ====== Hero ====== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow"><span class="badge">👋 Hello there</span></p>
+          <h1 class="hero-title">
+            I design and build
+            <span class="highlight">meaningful things</span>
+          </h1>
+          <p class="hero-subtitle">
+            I'm Alex Morgan, a full-stack developer and UI designer who loves turning
+            complex problems into simple, beautiful digital experiences.
+          </p>
+          <div class="hero-cta">
+            <a href="projects.html" class="btn btn-primary">View My Work</a>
+            <a href="about.html" class="btn btn-outline">About Me</a>
+          </div>
+        </div>
+
+        <div class="hero-avatar" aria-label="Profile photo placeholder">
+          <div class="avatar-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+            <span>Your Photo Here</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Skills strip ====== -->
+    <div class="skills-strip">
+      <div class="container skills-strip-inner">
+        <div class="skill-chip">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          HTML / CSS / JS
+        </div>
+        <div class="skill-chip">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h7"/></svg>
+          React &amp; Vue
+        </div>
+        <div class="skill-chip">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Node.js
+        </div>
+        <div class="skill-chip">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          Databases
+        </div>
+        <div class="skill-chip">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+          UI / UX Design
+        </div>
+        <div class="skill-chip">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+          Cloud &amp; DevOps
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== Stats ====== -->
+    <section class="section-pad" style="background:var(--clr-bg-alt);">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:2rem;text-align:center;">
+          <div class="reveal">
+            <p style="font-family:var(--font-heading);font-size:2.8rem;font-weight:700;color:var(--clr-accent);line-height:1;"><span data-count="25">0</span>+</p>
+            <p style="color:var(--clr-text-muted);font-size:.95rem;margin-top:.5rem;">Projects Completed</p>
+          </div>
+          <div class="reveal">
+            <p style="font-family:var(--font-heading);font-size:2.8rem;font-weight:700;color:var(--clr-accent);line-height:1;"><span data-count="4">0</span>+</p>
+            <p style="color:var(--clr-text-muted);font-size:.95rem;margin-top:.5rem;">Years of Experience</p>
+          </div>
+          <div class="reveal">
+            <p style="font-family:var(--font-heading);font-size:2.8rem;font-weight:700;color:var(--clr-accent);line-height:1;"><span data-count="18">0</span>+</p>
+            <p style="color:var(--clr-text-muted);font-size:.95rem;margin-top:.5rem;">Happy Clients</p>
+          </div>
+          <div class="reveal">
+            <p style="font-family:var(--font-heading);font-size:2.8rem;font-weight:700;color:var(--clr-accent);line-height:1;"><span data-count="7">0</span></p>
+            <p style="color:var(--clr-text-muted);font-size:.95rem;margin-top:.5rem;">Open Source Repos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Featured Projects ====== -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="badge">My Work</span>
+          <h2>Featured Projects</h2>
+          <p>A selection of things I've built — from polished UIs to full-stack applications.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <h3>Analytics Dashboard</h3>
+            <p>A real-time data dashboard with interactive charts, customisable widgets, and a dark/light theme.</p>
+            <div class="card-tags">
+              <span class="tag">React</span>
+              <span class="tag">D3.js</span>
+              <span class="tag">Node.js</span>
+            </div>
+            <div class="card-links">
+              <a href="projects.html" class="card-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                View Project
+              </a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <h3>E-Commerce Platform</h3>
+            <p>Full-stack online store with product management, Stripe payments, and order tracking.</p>
+            <div class="card-tags">
+              <span class="tag">Vue</span>
+              <span class="tag">Express</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <div class="card-links">
+              <a href="projects.html" class="card-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                View Project
+              </a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            </div>
+            <h3>Chat Application</h3>
+            <p>Real-time messaging app with rooms, file sharing, emoji reactions, and end-to-end encryption.</p>
+            <div class="card-tags">
+              <span class="tag">Socket.io</span>
+              <span class="tag">React</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <div class="card-links">
+              <a href="projects.html" class="card-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                View Project
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="text-center" style="margin-top:2.5rem;">
+          <a href="projects.html" class="btn btn-outline">See All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CTA ====== -->
+    <section class="section-pad" style="background:var(--clr-primary);">
+      <div class="container text-center reveal">
+        <p class="badge" style="background:rgba(255,255,255,.1);color:var(--clr-accent-light);">Let's Talk</p>
+        <h2 style="font-family:var(--font-heading);font-size:clamp(1.8rem,3vw,2.8rem);color:#fff;margin:.75rem 0 1rem;">Have a project in mind?</h2>
+        <p style="color:rgba(255,255,255,.65);max-width:480px;margin-inline:auto;margin-bottom:2rem;">
+          I'm always open to discussing new ideas, creative work, or opportunities to be part of something great.
+        </p>
+        <a href="contact.html" class="btn btn-primary" style="font-size:1.05rem;">Get in Touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">Alex<span>.</span></p>
+      <ul class="footer-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Twitter / X">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Alex Morgan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
