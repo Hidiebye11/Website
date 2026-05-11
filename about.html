@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Alex Morgan</title>
-  <meta name="description" content="Learn more about Alex Morgan — developer, designer, and life-long learner." />
+  <title>About — Hassan Bin Azhar</title>
+  <meta name="description" content="Learn more about Hassan Bin Azhar — chemical engineering graduate with a focus on safety, sustainability, and design." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="has-bg bg-about">
 
   <!-- ====== Navigation ====== -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container nav-inner">
-      <a href="index.html" class="nav-logo">Alex<span>.</span></a>
+      <a href="index.html" class="nav-logo">Hassan<span>.</span></a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -39,165 +39,200 @@
     </div>
 
     <!-- ====== About Grid ====== -->
-    <section class="section-pad">
+    <section class="section-pad section-panel">
       <div class="container">
         <div class="about-grid">
 
           <!-- Photo column -->
           <div class="about-photo reveal">
-            <div class="avatar-placeholder" style="width:100%;height:100%;">
-              <svg xmlns="http://www.w3.org/2000/svg" style="width:100px;height:100px;opacity:.4;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                <circle cx="12" cy="7" r="4"/>
-              </svg>
-              <span style="color:var(--clr-accent);font-weight:600;">Your Photo Here</span>
-            </div>
+            <img src="assets/profile_2.jpg" alt="Hassan Bin Azhar" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" />
           </div>
 
           <!-- Text column -->
           <div>
             <span class="badge">My Story</span>
-            <h1 class="about-content" style="font-family:var(--font-heading);font-size:clamp(1.8rem,3vw,2.6rem);color:var(--clr-primary);margin:.5rem 0 1.25rem;line-height:1.2;">Hey, I'm Alex Morgan</h1>
+            <h1 class="about-content" style="font-family:var(--font-heading);font-size:clamp(1.8rem,3vw,2.6rem);color:var(--clr-primary);margin:.5rem 0 1.25rem;line-height:1.2;">Hey, I'm Hassan!</h1>
             <p style="color:var(--clr-text-muted);font-size:1.05rem;margin-bottom:1rem;">
-              I'm a full-stack developer and UI designer based in San Francisco. I've spent the last four years
-              building products that sit at the intersection of elegant design and clean engineering.
+              I'm a Chemical Engineering graduate from the National University of Singapore, with a Specialization in Safety and Sustainability and a second Major in Innovation and Design.
             </p>
             <p style="color:var(--clr-text-muted);font-size:1.05rem;margin-bottom:1rem;">
-              My journey began with a curiosity for how things work — I'd pull apart websites to understand the
-              code behind them. That curiosity turned into a craft. Today I build scalable web applications,
-              design intuitive user interfaces, and help teams ship with confidence.
+              On the professional front, I've had the opportunity to work on various projects that have allowed me to apply my engineering skills in numerous real-world settings. From international water remediation projects to machine learning research, I have garned experience across a range of domains and industries. As such, I've developed a passion for learning and applying new skills, and I enjoy working on projects that allow me to do both.
             </p>
             <p style="color:var(--clr-text-muted);font-size:1.05rem;margin-bottom:1.75rem;">
-              Outside of code you'll find me hiking trails, experimenting with film photography,
-              or hunting for the perfect cup of pour-over coffee. ☕
+              In particular, I'm deeply interested in the intersection of engineering, sustainability and design. I believe that engineering solutions should not only be effective but also sustainable and user-centric. I'm always eager to take on projects that challenge me to think creatively and critically about how we can design better systems for a more sustainable future.
             </p>
 
-            <dl class="about-facts reveal">
-              <div class="fact-item">
-                <dt>Location</dt>
-                <dd>San Francisco, CA</dd>
-              </div>
-              <div class="fact-item">
-                <dt>Experience</dt>
-                <dd>4+ Years</dd>
-              </div>
-              <div class="fact-item">
-                <dt>Focus</dt>
-                <dd>Full-Stack Dev</dd>
-              </div>
-              <div class="fact-item">
-                <dt>Availability</dt>
-                <dd>Open to Work 🟢</dd>
-              </div>
-            </dl>
-
+            <p style="color:var(--clr-text-muted);font-size:1.05rem;margin-bottom:1.75rem;">
+              On the personal front, I am an amateur photographer, having taken courses and gigs in photography. In fact, the pictures you see are all taken by me! Apart from photography, I also enjoy hiking and exploring nature, and am a proud parent to two mischievous cats.
+            </p>
+            
             <a href="contact.html" class="btn btn-primary">Let's Work Together</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ====== Skills ====== -->
-    <section class="section-pad" style="background:var(--clr-bg-alt);">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="badge">Expertise</span>
-          <h2>Skills &amp; Technologies</h2>
-          <p>Tools and technologies I use to bring ideas to life.</p>
-        </div>
-
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;" class="reveal">
-          <!-- Left column -->
-          <div>
-            <h3 style="font-family:var(--font-heading);color:var(--clr-primary);margin-bottom:1.25rem;font-size:1.2rem;">Frontend</h3>
-            <div class="skill-bar-list">
-              <div class="skill-bar-item">
-                <div class="skill-bar-label"><span>HTML / CSS</span><span>95%</span></div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95%"></div></div>
-              </div>
-              <div class="skill-bar-item">
-                <div class="skill-bar-label"><span>JavaScript</span><span>88%</span></div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88%"></div></div>
-              </div>
-              <div class="skill-bar-item">
-                <div class="skill-bar-label"><span>React</span><span>82%</span></div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82%"></div></div>
-              </div>
-              <div class="skill-bar-item">
-                <div class="skill-bar-label"><span>Vue.js</span><span>75%</span></div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75%"></div></div>
-              </div>
-            </div>
-          </div>
-          <!-- Right column -->
-          <div>
-            <h3 style="font-family:var(--font-heading);color:var(--clr-primary);margin-bottom:1.25rem;font-size:1.2rem;">Backend &amp; Tools</h3>
-            <div class="skill-bar-list">
-              <div class="skill-bar-item">
-                <div class="skill-bar-label"><span>Node.js / Express</span><span>85%</span></div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85%"></div></div>
-              </div>
-              <div class="skill-bar-item">
-                <div class="skill-bar-label"><span>SQL / PostgreSQL</span><span>78%</span></div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78%"></div></div>
-              </div>
-              <div class="skill-bar-item">
-                <div class="skill-bar-label"><span>Git &amp; CI/CD</span><span>80%</span></div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80%"></div></div>
-              </div>
-              <div class="skill-bar-item">
-                <div class="skill-bar-label"><span>Figma / UI Design</span><span>70%</span></div>
-                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70%"></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ====== Experience Timeline ====== -->
-    <section class="section-pad">
+    <section class="section-pad section-panel">
       <div class="container">
         <div class="section-heading reveal">
           <span class="badge">History</span>
           <h2>Experience &amp; Education</h2>
           <p>Where I've worked and learned over the years.</p>
         </div>
-        <div style="max-width:640px;margin-inline:auto;" class="reveal">
-          <div class="timeline-list">
-            <div class="timeline-item">
-              <p class="timeline-date">2023 – Present</p>
-              <h3>Senior Front-End Developer</h3>
-              <p>Acme Tech Inc. — Leading UI development for a SaaS platform used by 50,000+ users. Spearheaded the design system rebuild that reduced component debt by 40%.</p>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-date">2021 – 2023</p>
-              <h3>Full-Stack Developer</h3>
-              <p>StartupXYZ — Built and shipped three core product features including real-time collaboration and an API integration layer, scaling from 0 to 10k users.</p>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-date">2020 – 2021</p>
-              <h3>Junior Web Developer</h3>
-              <p>Freelance — Delivered over 15 client websites and web applications, from landing pages to custom e-commerce builds.</p>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-date">2016 – 2020</p>
-              <h3>BSc Computer Science</h3>
-              <p>University of California, Berkeley — Graduated with honours. Specialised in human–computer interaction and software engineering.</p>
+        <div class="history-grid reveal">
+          <!-- Education -->
+          <div class="history-col">
+            <h3 class="history-col-title">Education</h3>
+            <div class="timeline-list split-list">
+              <div class="timeline-item split-item">
+                <div class="split-meta">
+                  <div class="split-index" aria-hidden="true"></div>
+                  <p class="timeline-date split-date">Aug 2022 &ndash; Apr 2026</p>
+                </div>
+                <div class="split-card">
+                  <h3>National University of Singapore (NUS)</h3>
+                  <p>Bachelor of Engineering in Chemical Engineering (Honours)</p>
+                  <ul class="timeline-bullets">
+                    <li>Specialisation in Safety and Sustainability</li>
+                    <li>Second Major in Innovation and Design</li>
+                    <li>Special Program in NUS College</li>
+                    <li>GPA: 4.69/5.00 (First Class Honours)</li>
+                    <li><strong>Relevant coursework:</strong> Chemical Process Safety; Computer-Aided Chemical Process Simulation; Control of Industrial Processes; Cost Analysis and Engineering Economy</li>
+                    <li>Ministry of Education (MOE) Tuition Grant Recipient; Employment Pass Eligibility Letter Holder</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item split-item">
+                <div class="split-meta">
+                  <div class="split-index" aria-hidden="true"></div>
+                  <p class="timeline-date split-date">Jan 2025 &ndash; Apr 2025</p>
+                </div>
+                <div class="split-card">
+                  <h3>University of British Columbia (UBC)</h3>
+                  <p>Student Exchange Program (SEP)</p>
+                  <ul class="timeline-bullets">
+                    <li><strong>Relevant coursework:</strong> Unit Operations; Engineering Economics for Chemical Engineers</li>
+                    <li>Awarded $10,000 through Canada-ASEAN SEED 2025 Scholarship for an exchange program at the University of British Columbia</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ====== CTA ====== -->
-    <section class="section-pad" style="background:var(--clr-primary);">
-      <div class="container text-center reveal">
-        <h2 style="font-family:var(--font-heading);font-size:clamp(1.8rem,3vw,2.6rem);color:#fff;margin-bottom:1rem;">Want to know more?</h2>
-        <p style="color:rgba(255,255,255,.65);max-width:480px;margin-inline:auto;margin-bottom:2rem;">Check out my projects or drop me a message — I'd love to connect.</p>
-        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-          <a href="projects.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff;">View Projects</a>
-          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+          <!-- Experience -->
+          <div class="history-col">
+            <h3 class="history-col-title">Experience</h3>
+            <div class="timeline-list split-list">
+              <div class="timeline-item split-item">
+                <div class="split-meta">
+                  <div class="split-index" aria-hidden="true"></div>
+                  <p class="timeline-date split-date">Dec 2025 &ndash; Mar 2026</p>
+                </div>
+                <div class="split-card">
+                  <h3>Research &amp; Development Intern &mdash; Hydroleap Pte Ltd</h3>
+                  <ul class="timeline-bullets">
+                    <li>Conducted 5&ndash;6 environmental compliance testing (Chemical Oxygen Demand, Free Chlorine) on semiconductor fab wastewater to support compliance with the Sewerage and Drainage Act (SDA) and the Sewerage and Drainage (Trade Effluent) Regulations</li>
+                    <li>Executed Boron-Doped Diamond (BDD) electro-oxidation trials and evaluated performance against client&apos;s EHS acceptance criteria, recommending corrective process controls to achieve up to 93% COD reduction</li>
+                    <li>Utilised Microsoft VBA to create Excel macros and add-ins for experimental data cleaning, cutting time needed for data validation by 80%</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item split-item">
+                <div class="split-meta">
+                  <div class="split-index" aria-hidden="true"></div>
+                  <p class="timeline-date split-date">May 2025 &ndash; Jul 2025</p>
+                </div>
+                <div class="split-card">
+                  <h3>Project-Based Intern &mdash; Shin Seiki</h3>
+                  <ul class="timeline-bullets">
+                    <li>Developed an annual energy consumption calculator on Excel for 3-phase Variable Refrigerant Flow (VRF) air-conditioning systems to assess client&apos;s energy savings</li>
+                    <li>Developed an annual energy consumption calculator on Excel for a two stage Variable-Speed Drive (VSD) air compressors to assess client&apos;s energy savings</li>
+                    <li>Collaborated with National Environment Agency (NEA) to verify and validate proposed methodologies</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item split-item">
+                <div class="split-meta">
+                  <div class="split-index" aria-hidden="true"></div>
+                  <p class="timeline-date split-date">Aug 2023 &ndash; Nov 2024</p>
+                </div>
+                <div class="split-card">
+                  <h3>Student Tutor &mdash; Department of Mechanical Engineering, NUS</h3>
+                  <ul class="timeline-bullets">
+                    <li>Extended engineering support to a class of 20+ students, debugging issues found in development of students&apos; robots and advising on next steps</li>
+                    <li>Optimised 3D designs provided by 18 teams using Fusion360 to enable structurally sound laser-cut acrylic prints</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item split-item">
+                <div class="split-meta">
+                  <div class="split-index" aria-hidden="true"></div>
+                  <p class="timeline-date split-date">May 2024 &ndash; Aug 2024</p>
+                </div>
+                <div class="split-card">
+                  <h3>Environmental Engineering Intern &mdash; Carbon GPT SDN BHD</h3>
+                  <ul class="timeline-bullets">
+                    <li>Trained on a GHG Protocol framework to understand carbon accounting and reporting processes and terminology such as Scope 1, 2, 3 emissions</li>
+                    <li>Headed market research on carbon accounting and reporting frameworks regionally and internationally (e.g., Partnership for Carbon Accounting Financials)</li>
+                    <li>Co-developed 17 Streamlit prototype webpages to showcase market research in an interactive webpage for internal and external stakeholders as potential new SaaS features</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item split-item">
+                <div class="split-meta">
+                  <div class="split-index" aria-hidden="true"></div>
+                  <p class="timeline-date split-date">Jan 2024 &ndash; Apr 2024</p>
+                </div>
+                <div class="split-card">
+                  <h3>Student Researcher &mdash; Department of Mechanical Engineering, NUS</h3>
+                  <ul class="timeline-bullets">
+                    <li>Prepared 5L bioreactors to cultivate and harvest Symbiotic Culture Of Bacteria and Yeast (SCOBY) from kombucha for tensile and stress tests via a tensile tester</li>
+                    <li>Directed experiments to evaluate ideal molar composition of Deep Eutectic Solvents (DES) required to increase ultimate tensile strength</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Volunteering -->
+          <div class="history-col">
+            <h3 class="history-col-title">Volunteering</h3>
+            <div class="timeline-list split-list">
+              <div class="timeline-item split-item">
+                <div class="split-meta">
+                  <div class="split-index" aria-hidden="true"></div>
+                  <p class="timeline-date split-date">Apr 2024 &ndash; Aug 2024</p>
+                </div>
+                <div class="split-card">
+                  <h3>Co-Program Manager &mdash; NUS Overseas College (NOC) Malaysia</h3>
+                  <ul class="timeline-bullets">
+                    <li>Pioneered a 3-month NOC Malaysia program as a co-program manager to manage welfare of 17 students and coordinate critical course information between University Malaya course supervisor and students</li>
+                    <li>Supervised sponsor funds of $3000 to co-organise 3 events including: welfare event for NOC students, networking dinner and final dinner for the NOC students</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item split-item">
+                <div class="split-meta">
+                  <div class="split-index" aria-hidden="true"></div>
+                  <p class="timeline-date split-date">Aug 2022 &ndash; Jan 2024</p>
+                </div>
+                <div class="split-card">
+                  <h3>Co-Director, Head of Logistics and Tutor &mdash; NUS College Connect Tuition</h3>
+                  <ul class="timeline-bullets">
+                    <li>Spearheaded a collaboration with TeachSG and Impart SG to onboard at-risk youths for mentoring</li>
+                    <li>Sourced and managed $3000 of club funds to be utilised in enrichment activities for mentors and mentees alike</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -207,7 +242,6 @@
   <!-- ====== Footer ====== -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p class="footer-logo">Alex<span>.</span></p>
       <ul class="footer-links" role="list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -215,17 +249,14 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="social-links">
-        <a href="#" class="social-link" aria-label="GitHub">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        <a href="mailto:e1053640@u.nus.edu" class="social-link" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
         </a>
-        <a href="#" class="social-link" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/hbazhar/" class="social-link" aria-label="LinkedIn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </a>
-        <a href="#" class="social-link" aria-label="Twitter / X">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        </a>
       </div>
-      <p class="footer-copy">&copy; <span id="year"></span> Alex Morgan. All rights reserved.</p>
+      <p class="footer-copy">&copy; <span id="year"></span> Hassan Bin Azhar. All rights reserved.</p>
     </div>
   </footer>
 

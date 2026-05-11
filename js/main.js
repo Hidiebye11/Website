@@ -108,14 +108,38 @@
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    // Simulate submission (replace with real endpoint)
+
+    if (typeof form.checkValidity === 'function' && !form.checkValidity()) {
+      if (typeof form.reportValidity === 'function') form.reportValidity();
+      return;
+    }
+
     var btn = form.querySelector('[type="submit"]');
-    btn.disabled = true;
-    btn.textContent = 'Sending…';
-    setTimeout(function () {
+    var originalBtnHtml = btn ? btn.innerHTML : '';
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+    }
+
+    var endpoint = form.getAttribute('action');
+    var method = (form.getAttribute('method') || 'POST').toUpperCase();
+    var payload = new FormData(form);
+
+    fetch(endpoint, {
+      method: method,
+      body: payload,
+      mode: 'no-cors'
+    }).then(function () {
+      form.reset();
       form.style.display = 'none';
       if (success) success.style.display = 'block';
-    }, 900);
+    }).catch(function (err) {
+      console.error('Contact form submission failed:', err);
+      if (btn) {
+        btn.disabled = false;
+        btn.innerHTML = originalBtnHtml;
+      }
+    });
   });
 })();
 
@@ -145,4 +169,65 @@
   }, { threshold: 0.5 });
 
   counters.forEach(function (el) { observer.observe(el); });
+})();
+
+/* =========================================
+   Typewriter (Home)
+   ========================================= */
+(function () {
+  var el = document.querySelector('.typewriter[data-words]');
+  if (!el) return;
+
+  var raw = el.getAttribute('data-words') || '';
+  var words;
+  try {
+    words = JSON.parse(raw);
+  } catch (e) {
+    words = raw.split(',').map(function (w) { return w.trim(); }).filter(Boolean);
+  }
+  if (!words || !words.length) return;
+
+  // Prevent the prefix (e.g. "I am") from visually shifting as words type/delete.
+  // Use a fixed width based on the longest phrase.
+  var longest = words.reduce(function (max, w) {
+    return Math.max(max, String(w || '').length);
+  }, 0);
+  if (longest > 0) {
+    el.style.minWidth = longest + 'ch';
+    el.style.display = 'inline-block';
+    el.style.whiteSpace = 'nowrap';
+  }
+
+  var wordIndex = 0;
+  var charIndex = 0;
+  var direction = 1; // 1 typing, -1 deleting
+  var pauseAfterTypedMs = 900;
+  var pauseAfterDeletedMs = 250;
+  var typeDelayMs = 70;
+  var deleteDelayMs = 45;
+
+  function tick() {
+    var word = words[wordIndex] || '';
+    charIndex += direction;
+
+    if (charIndex < 0) {
+      charIndex = 0;
+      direction = 1;
+      wordIndex = (wordIndex + 1) % words.length;
+      window.setTimeout(tick, pauseAfterDeletedMs);
+      return;
+    }
+
+    el.textContent = word.slice(0, charIndex);
+
+    if (direction === 1 && charIndex >= word.length) {
+      direction = -1;
+      window.setTimeout(tick, pauseAfterTypedMs);
+      return;
+    }
+
+    window.setTimeout(tick, direction === 1 ? typeDelayMs : deleteDelayMs);
+  }
+
+  tick();
 })();

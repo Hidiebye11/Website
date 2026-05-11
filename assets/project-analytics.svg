@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Analytics Dashboard thumbnail">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDE8D8"/>
+      <stop offset="1" stop-color="#FFF5EB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="36" fill="url(#bg)"/>
+  <g fill="none" stroke="#1E2A3A" stroke-opacity="0.18" stroke-width="6">
+    <rect x="120" y="130" width="960" height="420" rx="22"/>
+    <path d="M180 240h840"/>
+    <path d="M180 320h420"/>
+    <path d="M180 400h520"/>
+  </g>
+  <g fill="none" stroke="#D96B3F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.8">
+    <path d="M250 470l130-140 120 90 160-180 150 120"/>
+    <circle cx="250" cy="470" r="10" fill="#D96B3F"/>
+    <circle cx="380" cy="330" r="10" fill="#D96B3F"/>
+    <circle cx="500" cy="420" r="10" fill="#D96B3F"/>
+    <circle cx="660" cy="240" r="10" fill="#D96B3F"/>
+    <circle cx="810" cy="360" r="10" fill="#D96B3F"/>
+  </g>
+</svg>
